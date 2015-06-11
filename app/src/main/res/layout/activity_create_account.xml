@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.davis_pc.mobilenoticeboard.CreateAccount"
+    android:background="#ffff9b04"
+    android:layout_marginTop="50dp"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent">-->
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/txtName"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/txtPhone"
+        android:layout_alignStart="@+id/txtPhone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:id="@+id/edtName"
+        android:hint="enter your full name"
+        android:layout_above="@+id/txtPhone"
+        android:layout_alignLeft="@+id/edtPnone"
+        android:layout_alignStart="@+id/edtPnone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phone No."
+        android:id="@+id/txtPhone"
+        android:layout_below="@+id/txtName"
+        android:layout_alignRight="@+id/txtUserName"
+        android:layout_alignEnd="@+id/txtUserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edtPnone"
+        android:layout_alignTop="@+id/txtPhone"
+        android:layout_toRightOf="@+id/txtPhone"
+        android:layout_toEndOf="@+id/txtPhone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Position"
+        android:id="@+id/txtPosition"
+        android:layout_below="@+id/edtPnone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radGroup"
+        android:weightSum="1"
+        android:layout_below="@+id/edtPnone"
+        android:layout_toRightOf="@+id/txtPassOncreate"
+        android:layout_toEndOf="@+id/txtPassOncreate">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STUDENT"
+            android:id="@+id/radStudent"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LECTURER"
+            android:id="@+id/radLecturer"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADIMINISTRATOR"
+            android:id="@+id/radAdministrator"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTHER EMPLOYEES"
+            android:id="@+id/radOthers"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User Name"
+        android:id="@+id/txtUserName"
+        android:layout_below="@+id/radGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtUseroncreate"
+        android:layout_alignRight="@+id/radGroup"
+        android:layout_alignEnd="@+id/radGroup"
+        android:layout_alignBottom="@+id/txtUserName"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:layout_toEndOf="@+id/txtUserName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/txtPassOncreate"
+        android:layout_below="@+id/txtUserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPassOncreate"
+        android:layout_alignBottom="@+id/txtPassOncreate"
+        android:layout_alignLeft="@+id/radGroup"
+        android:layout_alignStart="@+id/radGroup"
+        android:hint="enter atleast six characters" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Confirm Password"
+        android:id="@+id/txtConfirm"
+        android:layout_below="@+id/txtPassOncreate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignRight="@+id/txtUserName"
+        android:layout_alignEnd="@+id/txtUserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtConPass"
+        android:layout_alignBottom="@+id/txtConfirm"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/txtConfirm"
+        android:layout_toEndOf="@+id/txtConfirm" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/btnSubmitOncreate"
+        android:layout_below="@+id/txtConfirm"
+        android:layout_centerHorizontal="true" />
+
+
+<!--</RelativeLayout>-->
+    </ScrollView>
+</RelativeLayout>

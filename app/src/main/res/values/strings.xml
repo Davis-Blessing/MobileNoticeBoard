@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobileNoticeBoard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_signin_orcreateaccount">signinORcreateaccount</string>
+    <string name="title_activity_sign_in">signIn</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_view__or__post__notice">View_Or_Post_Notice</string>
+    <string name="title_activity_post__notice">Post_Notice</string>
+
+
+</resources>

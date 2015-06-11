@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.davis_pc.mobilenoticeboard.Welcome"
+    android:background="#ffff9b04"
+    android:clickable="false"
+    android:nestedScrollingEnabled="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MUST MOBI"
+        android:id="@+id/txtLogo"
+        style="@style/Widget.AppCompat.ListPopupWindow"
+        android:textColor="#fb030303"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnConnect"
+        android:layout_alignEnd="@+id/btnConnect"
+        android:ellipsize="marquee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome To Must Mobile Notice Board"
+        android:id="@+id/txtWelcome"
+        android:layout_above="@+id/txtView"
+        android:layout_marginBottom="52dp"
+        android:background="#fffffb73" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:id="@+id/btnConnect"
+
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00ffffff"
+        android:textColor="#ff3bff3d"
+        android:contentDescription="click to continue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Post/View notices, events/ activities taking place at Must from Anywhere"
+        android:id="@+id/txtView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ff18ff0e" />
+
+
+</RelativeLayout>

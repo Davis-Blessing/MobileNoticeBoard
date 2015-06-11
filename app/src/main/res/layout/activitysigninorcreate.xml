@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.davis_pc.mobilenoticeboard.signinORcreateaccount"
+    android:background="#ffff9b04"
+    android:id="@+id/activitySigninOrCreate">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:weightSum="100">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text="Sign In "
+            android:id="@+id/btnSignin"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text=" Create Account"
+            android:id="@+id/btnCreateaccount" />
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You can SIGN IN  to log into your account or CREATE ACCOUNT incase you dont have one"
+        android:id="@+id/textView3"
+        android:layout_marginTop="48dp"
+        android:background="#ffffc65e"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff9c73ff" />
+
+
+
+
+</RelativeLayout>
